@@ -11,23 +11,23 @@ var eventEmitter = new events.EventEmitter();
 
 const { Wechaty } = require('wechaty');
 
-// const WECHATY_PUPPET_PADCHAT_TOKEN = 'puppet_padchat_d53cd4cff253d8f6';
+const WECHATY_PUPPET_PADCHAT_TOKEN = 'puppet_padchat_d53cd4cff253d8f6';
 
-// const puppet = 'wechaty-puppet-padchat'; // 使用ipad 的方式接入。
+const puppet = 'wechaty-puppet-padchat'; // 使用ipad 的方式接入。
 
-// const puppetOptions = {
-//   token: WECHATY_PUPPET_PADCHAT_TOKEN,
-// };
-
-const bot = new Wechaty({
-  name: 'mybot',
-});
+const puppetOptions = {
+  token: WECHATY_PUPPET_PADCHAT_TOKEN,
+};
 
 // const bot = new Wechaty({
 //   name: 'mybot',
-//   puppet,
-//   puppetOptions,
 // });
+
+const bot = new Wechaty({
+  name: 'mybot',
+  puppet,
+  puppetOptions,
+});
 
 mybot(bot, eventEmitter);
 login.loginFun(eventEmitter);
