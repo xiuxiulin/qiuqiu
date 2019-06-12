@@ -1,0 +1,46 @@
+{
+  "name": "wechaty-getting-started",
+  "version": "0.1.0",
+  "description": "Wechaty is a Wechat Bot SDK for Personal Account in Node.js",
+  "main": "index.js",
+  "engines": {
+    "node": ">= 10"
+  },
+  "scripts": {
+    "postinstall": "check-node-version --node \">= 10\"",
+    "start": "node app.js",
+    "base": "node examples/basic/ding-dong-bot.js",
+    "test": "node tests/smoke-testing.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chatie/wechaty-getting-started.git"
+  },
+  "keywords": [],
+  "author": "Huan LI <zixia@zixia.net>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chatie/wechaty-getting-started/issues"
+  },
+  "homepage": "https://github.com/Chatie/wechaty-getting-started#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "brolog": "^1.8.3",
+    "connect-flash": "^0.1.1",
+    "ejs": "^2.6.1",
+    "express": "^4.17.1",
+    "file-box": "^0.8.27",
+    "memory-card": "^0.6.13",
+    "node-gyp": "^4.0.0",
+    "prebuild-install": "^5.3.0",
+    "qrcode-terminal": "^0.12.0",
+    "serve-favicon": "^2.5.0",
+    "wechaty": "^0.22.6",
+    "wechaty-puppet": "^0.15.6",
+    "wechaty-puppet-padchat": "^0.18.2",
+    "wechaty-puppet-puppeteer": "^0.14.1"
+  },
+  "devDependencies": {
+    "check-node-version": "^3.2.0"
+  }
+}
